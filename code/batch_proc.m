@@ -6,8 +6,8 @@ clear, close all, clc
 
 txt = 'python download_contrib_all.py';
 [status, cmdout] = unix(txt)
-mex ./contrib/grid3_dct_11aug/grid3_MAT.c -outdir ./contrib/grid3_dct_11aug/
-mex ./contrib/sdc3_nrz_11aug/sdc3_MAT.c -outdir ./contrib/sdc3_nrz_11aug/
+mex  -compatibleArrayDims ./contrib/grid3_dct_11aug/grid3_MAT.c -outdir ./contrib/grid3_dct_11aug/
+mex  -compatibleArrayDims ./contrib/sdc3_nrz_11aug/sdc3_MAT.c -outdir ./contrib/sdc3_nrz_11aug/
 
 %% download data input
 
